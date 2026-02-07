@@ -2,16 +2,16 @@ import { useState } from 'react'
 
 import './App.css'
 
-function App({name}) {
+function Books({name}) {
   const [count, setCount] = useState(name)
 
   return (
     <>
 
-      <h1>Hello World  {count}</h1>
+      <h1>Search Component</h1>
 
     </>
   )
 }
 
-export default App
+export default Books

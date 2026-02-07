@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import {seachBox} from './components/SearchBox'
 import './App.css'
 
 function App({name}) {
@@ -8,7 +9,7 @@ function App({name}) {
     <>
 
       <h1>Hello World  {count}</h1>
-
+      <seachBox/>
     </>
   )
 }
