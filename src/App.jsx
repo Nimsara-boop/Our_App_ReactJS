@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import {seachBox} from './components/SearchBox'
+import SearchBox from './components/SearchBox'
+import  Bookss   from './components/Books'
 import './App.css'
 
 function App({name}) {
@@ -9,7 +10,8 @@ function App({name}) {
     <>
 
       <h1>Hello World  {count}</h1>
-      <seachBox/>
+      <SearchBox/>
+      <Bookss/>
     </>
   )
 }

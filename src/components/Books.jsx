@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
-import './App.css'
+import '../App.css'
 
-function Books({name}) {
-  const [count, setCount] = useState(name)
+function Bookss() {
+  //const [count, setCount] = useState(name)
 
   return (
     <>
@@ -14,4 +14,4 @@ function Books({name}) {
   )
 }
 
-export default Books
+export default Bookss
