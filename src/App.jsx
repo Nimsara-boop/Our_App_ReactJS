@@ -3,13 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
+function App({name}) {
   const [count, setCount] = useState(0)
 
   return (
     <>
 
-      <h1>Hello World</h1>
+      <h1>Hello World - {name}</h1>
 
     </>
   )
