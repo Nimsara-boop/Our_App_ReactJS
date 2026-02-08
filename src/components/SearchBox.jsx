@@ -2,13 +2,15 @@ import { useState } from 'react'
 
 import '../App.css'
 
-function SearchBox() {
+function SearchBox({searchTerm, setSearchTerm}) {
   //const [count, setCount] = useState(name)
 
   return (
     <>
 
-      <h1>Search Component</h1>
+      <input type='text' placeholder='Enter book here...' value={searchTerm} //controlled input
+      onChange={(e) => setSearchTerm(e.target.value)}
+      />
 
     </>
   )

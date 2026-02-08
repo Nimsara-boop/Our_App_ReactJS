@@ -30,6 +30,14 @@ body {
   min-height: 100vh;
 }
 
+input{
+  padding: 10px;
+  border-radius: 5px;
+  font:100% system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: aquamarine;
+  color:rgb(50, 87, 75);
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;

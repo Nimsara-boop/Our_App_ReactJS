@@ -1,17 +1,17 @@
 import { useState } from 'react'
 import SearchBox from './components/SearchBox'
-import  Bookss   from './components/Books'
+import  Books   from './components/Books'
 import './App.css'
 
 function App({name}) {
-  const [count, setCount] = useState(name)
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <>
 
-      <h1>Hello World  {count}</h1>
-      <SearchBox/>
-      <Bookss/>
+      <h1>Browse Books</h1>
+      <SearchBox searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <Books searchTerm={searchTerm}/>
     </>
   )
 }
