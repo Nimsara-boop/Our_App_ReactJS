@@ -5,13 +5,12 @@ import './App.css'
 
 function App({name}) {
   const [searchTerm, setSearchTerm] = useState("");
-
   return (
     <>
 
       <h1>Browse Books</h1>
-      <SearchBox searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-      <Books searchTerm={searchTerm} isSearchUsed={istSearchUsed}/>
+      <SearchBox searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <Books searchTerm={searchTerm} />
     </>
   )
 }

@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react'
 
 import '../App.css'
 
-function Books({searchTerm}, {isSearchUsed}) {
+function Books({searchTerm}) {
 
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   
+  const isSearchUsed = (searchTerm.trim() !== ""); //if the search term is not empty, then the search is used
+
   useEffect(()=>{
     fetch('/books.json')
     .then((res)=>{
@@ -33,9 +35,14 @@ function Books({searchTerm}, {isSearchUsed}) {
 
   return (
     <>
-    {filteredBooks.length === 0 ? (
-      <p>No Books Found</p>) : (
-        <div class="filteredBooks">
+    
+    {!isSearchUsed && <h2>{books.length} Books in Library</h2>}
+    
+    {isSearchUsed && filteredBooks.length === 0 &&
+      <p>No Books Found</p> }
+      
+    {isSearchUsed && filteredBooks.length > 0 && (
+            <div class="filteredBooks">
         <h2>{filteredBooks.length} Books Found</h2>
         {filteredBooks.map((b,index) => (
             <ul key={index}>
@@ -45,7 +52,8 @@ function Books({searchTerm}, {isSearchUsed}) {
         </div>
       )
     
-    };
+    }
+
       
     </>
   )
