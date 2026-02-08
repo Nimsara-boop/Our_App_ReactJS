@@ -11,7 +11,7 @@ function App({name}) {
 
       <h1>Browse Books</h1>
       <SearchBox searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-      <Books searchTerm={searchTerm}/>
+      <Books searchTerm={searchTerm} isSearchUsed={istSearchUsed}/>
     </>
   )
 }

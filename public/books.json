@@ -1,19 +1,105 @@
 {
     "books":[
-        {
-            "title":"The Great Gatsby",
-            "author":"F. Scott Fitzgerald",
-            "year":1925
-        },
-        {
-            "title":"To Kill a Mockingbird",
-            "author":"Harper Lee",
-            "year":1960
-        },
-        {
-            "title":"State of Fear",
-            "author":"George Orwell",
-            "year":1949
-        }
+{
+  "title": "1984",
+  "author": "George Orwell",
+  "year": 1949
+},
+{
+  "title": "Brave New World",
+  "author": "Aldous Huxley",
+  "year": 1932
+},
+{
+  "title": "The Catcher in the Rye",
+  "author": "J. D. Salinger",
+  "year": 1951
+},
+{
+  "title": "Lord of the Flies",
+  "author": "William Golding",
+  "year": 1954
+},
+{
+  "title": "Animal Farm",
+  "author": "George Orwell",
+  "year": 1945
+},
+{
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "year": 1813
+},
+{
+  "title": "The Hobbit",
+  "author": "J. R. R. Tolkien",
+  "year": 1937
+},
+{
+  "title": "Fahrenheit 451",
+  "author": "Ray Bradbury",
+  "year": 1953
+},
+{
+  "title": "Jane Eyre",
+  "author": "Charlotte Brontë",
+  "year": 1847
+},
+{
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "year": 1988
+},
+{
+  "title": "The Book Thief",
+  "author": "Markus Zusak",
+  "year": 2005
+},
+{
+  "title": "Moby-Dick",
+  "author": "Herman Melville",
+  "year": 1851
+},
+{
+  "title": "The Road",
+  "author": "Cormac McCarthy",
+  "year": 2006
+},
+{
+  "title": "The Kite Runner",
+  "author": "Khaled Hosseini",
+  "year": 2003
+},
+{
+  "title": "Of Mice and Men",
+  "author": "John Steinbeck",
+  "year": 1937
+},
+{
+  "title": "The Chronicles of Narnia",
+  "author": "C. S. Lewis",
+  "year": 1950
+},
+{
+  "title": "The Hunger Games",
+  "author": "Suzanne Collins",
+  "year": 2008
+},
+{
+  "title": "Harry Potter and the Philosopher's Stone",
+  "author": "J. K. Rowling",
+  "year": 1997
+},
+{
+  "title": "The Da Vinci Code",
+  "author": "Dan Brown",
+  "year": 2003
+},
+{
+  "title": "The Shining",
+  "author": "Stephen King",
+  "year": 1977
+}
+
     ]
 }
