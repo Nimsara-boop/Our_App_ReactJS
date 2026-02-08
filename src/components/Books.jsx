@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-
+import bookmark from '../assets/bookmark.png'
+import addedBookmark from '../assets/addedBookmark.png'
 import '../App.css'
 
 function Books({searchTerm}) {
@@ -7,7 +8,7 @@ function Books({searchTerm}) {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  
+  const [bookmarks, setBookmarks] = useState({});
   const isSearchUsed = (searchTerm.trim() !== ""); //if the search term is not empty, then the search is used
 
   useEffect(()=>{
@@ -46,7 +47,11 @@ function Books({searchTerm}) {
         <h2>{filteredBooks.length} Books Found</h2>
         {filteredBooks.map((b,index) => (
             <ul key={index}>
-              {b.title} - {b.author}
+              <div style={{display: 'flex', alignItems: 'center', gap:'0.5rem'}}>
+                <img src={bookmarks[index] ? addedBookmark : bookmark} alt="bookmark" className="bookmark-icon" style={{width:'15px'}}
+                     onClick={()=>setBookmarks(prev => ({...prev, [index] : !prev[index] }))}/>
+                {b.title} - {b.author}
+              </div>
             </ul>
         ))}
         </div>
